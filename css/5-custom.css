@@ -1,0 +1,195 @@
+
+/* Landing top
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.landing {
+  background-color: #280b0b;
+/*background-image: url('../images/lava-seamless-black.jpg');*/
+ padding: 1em 1em 0 1em;
+}
+.landing h1{
+  font-weight: 400;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #d40000
+}
+.landing h3 {
+  padding-bottom: 2em;
+}
+/* landing images
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.red-bg {
+  width: 100%;
+  background-color: #d40000;
+  background-image: url('../images/lava-seamless-red.jpg');
+  /*background-size: cover;*/
+  color: #fff;
+  margin:-2.6em 0 0 0;
+}
+.red-bg h1{
+  font-weight: 700;
+  font-size: 1.5em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin: 1em 2em 2em;
+}
+
+.bgprogram {
+  width: 100%;
+  background-color: #280b0b;
+  /*background-size: cover;*/
+  color: #fff;
+  margin:0;
+}
+
+/* footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.footer-bg {
+  width: 100%;
+  padding: 1em;
+  background-color: #d40000;
+  background-image: url('../images/lava-seamless-red.jpg');
+  /*background-size: cover;*/
+  color: #fff;
+  margin-top: -1em;
+}
+.socialbutts {
+  text-align: center;
+}
+.socialbutts a{
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #fff;
+}
+/*
+  ========================================
+  Form
+  ========================================
+*/
+.register {
+
+  border: 1px solid;
+  border-radius: .3em;
+  padding: 1em;
+  margin: 2em auto;
+}
+
+.register input[type=text], 
+.register input[type=email], 
+.register input[type=tel], 
+textarea {
+  display: block;
+  border: 1px solid grey;
+  border-radius: .2em;
+  width: 100%;
+  padding: .5em;
+  margin: .3em 0;
+  box-shadow:inset 2px 3px 5px rgb(167, 166, 166);
+}
+.register input[type=text]:active {
+  border: 1px solid green;
+}
+.register input[type=submit]{
+  display: block;
+  background-image: linear-gradient(rgb(172, 2, 2), rgb(255, 81, 0));
+  color: #fff;
+  border: 1px solid;
+  border-radius: .2em;
+  margin: .5em auto;
+}
+
+/********************** video í vinnslu *************
+#myVideo {
+  position: relative;
+  width: 100%; 
+  height: 30em; 
+  padding: 0;
+  margin: 0;
+}
+*/
+
+/* Bigger than 48 */
+@media (min-width: 48em) {
+
+  .landing-img {
+    position: relative;
+    top: -20em;
+    padding: 2em 1em 0 1em;
+  }
+  .landing h1{
+    font-size: 2.5em;
+    letter-spacing: .1em;
+    padding-top:1em;
+  }
+  .landing h3 {
+    margin-top: -11em; 
+    padding-bottom: 3em;
+  }
+  .red-bg {
+    height: 25em;
+    margin:-3.3em 0 0 0;
+  }
+  .red-bg h1{
+    font-size: 2em;
+  }
+}
+
+/* Bigger than 960 */
+@media (min-width: 60em) {
+  .red-bg {
+    height: 27em;
+    margin-top: -4.5em;
+  }
+  .red-bg h1{
+    padding-top: 1em;
+    font-size: 3em;
+  }
+  .landing h1{
+    font-size: 3.5em;
+  }
+  .landing-img {
+    position: relative;
+  }
+  .grandstand {
+    margin-bottom: -.75em;
+  }
+}
+
+/* ****** töflumix ********/
+
+@media screen and (max-width: 37.5em) {
+
+
+  .schedule {
+    padding: 0 .5em ;
+  }
+  .schedule thead,
+  .schedule tbody th {
+    display:none;
+  }
+  
+  .schedule tr {
+    /*border-bottom: 1px solid #ddd;*/
+    display: block;
+    margin: .4em 0;
+  }
+  
+  .schedule td {
+    display: block;
+    text-align: right;
+    padding: 2em 1.4em .5em .5em;
+    width:96%;
+  }
+  
+  .schedule td::before {
+    content: attr(data-label);
+    float: left;
+  }
+  .schedule h4 {
+    margin-top: -.1em;
+    font-size: 1.1em;
+    padding-bottom: .2em;
+  }
+}
