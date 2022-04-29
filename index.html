@@ -9,20 +9,25 @@
     <title>Simon & Garfunkel - Rock´n in Iceland</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/1-base.css">
+    <!--link rel="stylesheet" href="css/1-base.css">
     <link rel="stylesheet" href="css/2-grid.css">
     <link rel="stylesheet" href="css/3-iconfont.css">
     <link rel="stylesheet" href="css/4-topmenu.css">
     <link rel="stylesheet" href="css/5-custom.css">
     <link rel="stylesheet" href="css/6-popup.css">
     <link rel="stylesheet" href="css/7-ad.css">
-    <!--link rel="stylesheet" href="css/styles.css"-->
+    <link rel="stylesheet" href="css/8-iframe.css"-->
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/svg" href="images/rwd-icon.svg">
 </head>
 <body id="top">
   <header>
     <section class="topnav">
-      <p>GROOVY THING GOIN'</p>
+      <p> 
+        <button onclick="playAudio()" type="button" class="playbutton">&#9658;</button>
+        <button onclick="pauseAudio()" type="button" class="playbutton">&#9632;</button> 
+         &nbsp; GROOVY THING GOIN'
+      </p>
       <nav>
         <input type="checkbox" id="toggle" class="menuInput">
         <label for="toggle" class="menuLabel"><span class="icon-home"></span></label>
@@ -182,6 +187,17 @@
           </div>
       </div>
   </section>
+  <section>
+    <div class="container">
+      <iframe 
+        class="gluggi" 
+        src="https://www.youtube.com/watch?v=x2bd1zp_q6Y" 
+        title="Simon and Garfunkel -The Concert in Central Park 1981" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe><!--allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" -->
+    </div>
+  </section>
   <footer class="footer-bg">
     <section class="container col-2">
       <div>
@@ -250,19 +266,19 @@
   </div><!-- auglýsing endar -->
     <p class="centre"><a href=#top class="button">Top page</a></p>
   </footer>
-  <!--script>
-    var video = document.getElementById("myVideo");
-    var btn = document.getElementById("myBtn");
+  <audio id="myAudio"><!-- tónlist -->
+    <source src="audio/I-am-a-rock.mp3" type="audio/mpeg">
+  </audio>
+  <script>
+    var x = document.getElementById("myAudio"); 
     
-    function myFunction() {
-      if (video.paused) {
-        video.play();
-        btn.innerHTML = "Pause";
-      } else {
-        video.pause();
-        btn.innerHTML = "Play";
-      }
-    }
-    </script-->
+    function playAudio() { 
+      x.play(); 
+    } 
+    
+    function pauseAudio() { 
+      x.pause(); 
+    } 
+    </script>
 </body>
 </html>

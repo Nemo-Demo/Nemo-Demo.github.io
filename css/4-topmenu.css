@@ -78,7 +78,14 @@ input[type="checkbox"].menuInput {
   color: #fff;
   letter-spacing: .1em;
 }
-
+/* playbutton */
+.playbutton {
+  width:1.6em;
+  height: 1.6em;
+  padding: 0;
+  line-height: 1;
+  border-radius: 50%;
+}
 @media screen and (min-width: 48em) {
   .topnav {
     position: fixed;

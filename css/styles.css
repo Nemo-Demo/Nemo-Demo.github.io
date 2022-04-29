@@ -99,6 +99,7 @@ input[type=checkbox].menuInput{display:none}
 .topmenu a.current{color:#ff4500}
 .topnav{background-color:#280b0b}
 .topnav p{margin:0;padding:.7em 0 0 2em;color:#fff;letter-spacing:.1em}
+.playbutton{width:1.6em;height:1.6em;padding:0;line-height:1;border-radius:50%}
 @media screen and (min-width:48em){
 .topnav{position:fixed;z-index:2;top:0;left:0;width:100%;display:grid;grid-template-columns:1fr 2fr}
 }
@@ -161,10 +162,10 @@ button.thoughtbot2:hover,button.thoughtbot:hover{background-color:#f37873;backgr
 .auglysing2 h1{font-size:2em}
 .innihald2{display:flex;flex:1 1 0;padding:1em}
 .innihald2 h1{padding-right:.5em}
-#sprite4{border-radius:.4em;animation-name:imgFadeIn;animation-timing-function:ease-in-out;animation-duration:5s;animation-direction:alternate}
+#simGar{border-radius:.4em;animation-name:imgFadeIn;animation-timing-function:ease-in-out;animation-duration:4s;animation-direction:alternate}
 @keyframes imgFadeIn{
 0%{opacity:0}
-70%{opacity:.1}
+20%{opacity:.1}
 100%{opacity:1}
 }
 .thoughtbot2{position:relative;margin:1.8em -2em 0 0;animation:poppR 5s 1;animation-direction:alternate}
@@ -184,4 +185,23 @@ button.thoughtbot2:hover,button.thoughtbot:hover{background-color:#f37873;backgr
 0%{opacity:0}
 70%{opacity:.01}
 100%{opacity:1}
+}
+.gluggi{width:18em;height:10.5em}
+@media screen and (min-width:23em){
+.gluggi{width:22em;height:13em}
+}
+@media screen and (min-width:30em){
+.gluggi{width:29em;height:15.75em}
+}
+@media screen and (min-width:37.5em){
+.gluggi{width:35em;height:19.7em}
+}
+@media screen and (min-width:48em){
+.gluggi{width:46em;height:24.6em}
+}
+@media screen and (min-width:60em){
+.gluggi{width:58em;height:33em}
+}
+@media screen and (min-width:80em){
+.gluggi{width:78em;height:44em}
 }
