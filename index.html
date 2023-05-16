@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS grind">
+    <meta name="author" content="GJG">
+    <title>Simon & Garfunkel - Rock´n in Iceland</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--link rel="stylesheet" href="css/1-base.css">
+    <link rel="stylesheet" href="css/2-grid.css">
+    <link rel="stylesheet" href="css/3-iconfont.css">
+    <link rel="stylesheet" href="css/4-topmenu.css">
+    <link rel="stylesheet" href="css/5-custom.css">
+    <link rel="stylesheet" href="css/6-popup.css">
+    <link rel="stylesheet" href="css/7-ad.css">
+    <link rel="stylesheet" href="css/8-iframe.css"-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg" href="images/rwd-icon.svg">
+</head>
+<body id="top">
+  <header>
+    <section class="topnav">
+      <p> 
+        <button onclick="playAudio()" type="button" class="playbutton">
+          <span class="icon-play3"></span></button>
+        <button onclick="pauseAudio()" type="button" class="playbutton">&#9632;</button> 
+         &nbsp; GROOVY THING GOIN'
+      </p>
+      <nav>
+        <input type="checkbox" id="toggle" class="menuInput">
+        <label for="toggle" class="menuLabel"><span class="icon-home"></span></label>
+        <div class="topmenu">
+          <a href="#top"><span class="icon-home"></span> Where</a>
+          <a href="#myndir"><span class="icon-happy2"></span> Why</a>
+          <a href="#cssgrid"><span class="icon-star-full"></span> Program</a>
+          <a href="#letur"><span class="icon-qrcode"></span> Buy Tickets</a>
+          <a href="#form"><span class="icon-bubbles"></span> About Us</a>
+        </div>
+      </nav>
+    </section>
+    <section class="landing">
+        <div class="container">
+          <h1>Simon & Garfunkel</h1>
+        </div>
+    </section>
+  </header>
+  <main>
+    <section class="red-bg">
+      <!--video autoplay muted loop id="myVideo">
+        <source src="images/rain.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video-->
+      <div class="container">
+        <h1>I am a rock</h1>
+      </div>
+    </section>
+    <section class="landing">
+      <div class="col-2 container" id="simGar">
+        <figure class="landing-img">
+          <img src="images/garfunkel.jpg" alt="Garfunkel">
+          <!--figcaption>Garfunkel</figcaption-->
+        </figure>
+        <figure class="landing-img">
+          <img src="images/simon.jpg" alt="Símon">
+          <!--figcaption>Simon</figcaption-->
+        </figure>
+      </div>
+      <h3 class="centre"><a href="#popup1" class="button">BUY TICKETS</a></h3>
+    </section>
+    <section class="container col-2">
+      <article>
+        <h1>Rock On Iceland</h1>
+        <p>In the midnight sun... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.</p>        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.</p>
+      </article>
+      <article>
+        <figure>
+          <img src="images/skálinn.jpg" alt="Ísólfsskáli">
+        </figure>      
+      </article>
+    </section>
+    <section class="container" id="letur">
+      <div class="col-2">
+        <article>
+          <h1>Why</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.</p>
+        </article>
+        <article>
+          <h1>When</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.</p>
+        </article>
+      </div>
+      <h1 class="grandstand">Ísólfsskáli Grand Stadium</h1>
+    </section>
+  </main>
+  <section class="bgprogram" id="program">
+    <div class="container">
+      <div class="schedule">
+            <table>
+              <caption>Schedule of something</caption>
+              <thead>
+                  <tr> 
+                      <th scope="col">WHO</th>
+                      <th scope="col">WHERE</th>
+                      <th scope="col">WHEN</th>
+                      <th scope="col">CHECK IN</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td scope="row" data-label="WHO">Obcaecati deleniti</td>
+                      <td data-label="WHERE">Lorem ipsum dolor, adipisicing elit</td>
+                      <td data-label="WHEN">10:30 - 12:00</td>
+                      <td data-label="CHECK IN"><a class="button" href="#popup1">Register</a></td>
+                  </tr>
+                  <tr>
+                      <td scope="row" data-label="WHO">Sit amet consectetur</td>
+                      <td data-label="WHERE">Dolor saepe odio</td>
+                      <td data-label="WHEN">13:30 - 17:00</td>
+                      <td data-label="CHECK IN"><a class="button" href="#popup1">Register</a></td>
+                  </tr>
+                  <tr>
+                      <td scope="row" data-label="WHO">Fuga corrupti commodi optio</td>
+                      <td data-label="WHERE">Non eius odit, animi alias adipisci sed hic nisi.</td>
+                      <td data-label="WHEN">22:30 - 00:00</td>
+                      <td data-label="CHECK IN"><a class="button" href="#popup1">Register</a></td>
+                  </tr>
+                  <tr>
+                    <td scope="row" data-label="WHO">Obcaecati deleniti</td>
+                    <td data-label="WHERE">Lorem ipsum dolor, adipisicing elit</td>
+                    <td data-label="WHEN">10:30 - 12:00</td>
+                    <td data-label="CHECK IN"><a class="button" href="#popup1">Register</a></td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="WHO">Sit amet consectetur</td>
+                    <td data-label="WHERE">Dolor saepe odio</td>
+                    <td data-label="WHEN">13:30 - 17:00</td>
+                    <td data-label="CHECK IN"><a class="button" href="#popup1">Register</a></td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="WHO">Fuga corrupti commodi optio</td>
+                    <td data-label="WHERE">Non eius odit, animi alias adipisci sed hic nisi.</td>
+                    <td data-label="WHEN">22:30 - 00:00</td>
+                    <td data-label="CHECK IN"><a class="button" href="#popup1">Register</a></td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+      <br>
+    </div>
+        <!--popup 1-->
+        <div id="popup1" class="overlay">
+          <div class="popup">
+            <div class="register">
+              <h3>Event of some Sort</h3>
+              <a class="close" href="#program">&times;</a>
+              <div class="content">
+                <form action="#" method="GET">
+                  <fieldset><!--nota klasa til að geta haft aðra forma með öðru útliti - sjá css-->
+                      <label><!--autofocus-->
+                          <input type="text" 
+                                  name="nafn" 
+                                  placeholder="Full name" 
+                                  required 
+                                  title="Vinsamlegast skráið nafn"> <!--ATH! input hefur ekki lokunartag -->
+                      </label>
+                      <label>
+                          <input  type="text" 
+                                  name="sími" 
+                                  placeholder="Telephone (7 digits)"
+                                  title="Vinsamlegast skráið aðeins 7 tölustafi"
+                                  required
+                                  pattern="\d{3}(?:[\-\s]?)\d{4}">
+                      </label>    <!-- http://html5pattern.com/Phones "\d{3}(?:[\-\s]?)\d{4}" -->
+                      <label>
+                          <input  type="email" 
+                                  name="tölvupóstur" 
+                                  placeholder="Email address" 
+                                  required>
+                        </label>
+                      <label>
+                          <input type="submit" name="submit" value="Send">
+                  </fieldset>
+              </form>            
+            </div>
+          </div>
+      </div>
+  </section>
+  <section>
+    <div class="container">
+      <iframe 
+        class="gluggi" 
+        src="https://www.youtube.com/embed/Bxryb3xN-Lo" 
+        title="Simon and Garfunkel -The Concert in Central Park 1981" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+  <footer class="footer-bg">
+    <section class="container col-2">
+      <div>
+        <h2>Contact Us</h2>
+        <div class="register">
+          <form action="#" method="GET">
+              <fieldset><!--nota klasa til að geta haft aðra forma með öðru útliti - sjá css-->
+                  <label><!--autofocus-->
+                      Nafn 
+                      <input type="text" 
+                              name="nafn" 
+                              placeholder="Full name" 
+                              required 
+                              title="Vinsamlegast skráið nafn"> <!--ATH! input hefur ekki lokunartag -->
+                  </label>
+                  <label>
+                      Símanúmer
+                      <input  type="text" 
+                              name="sími" 
+                              placeholder="123 4567"
+                              title="Vinsamlegast skráið aðeins 7 tölustafi"
+                              required
+                              pattern="\d{3}(?:[\-\s]?)\d{4}">
+                  </label>    <!-- http://html5pattern.com/Phones "\d{3}(?:[\-\s]?)\d{4}" -->
+                  <label>
+                      Tölvupóstur
+                      <input  type="email" 
+                              name="tölvupóstur" 
+                              placeholder="Email address" 
+                              required>
+                    </label>
+                  <label>
+                  <br>
+                      Athugasemdir <!--https://www.w3schools.com/tags/att_textarea_rows.asp-->
+                      <textarea rows="4" name="Athugasemdir"></textarea>
+                  </label>
+                      <input type="submit" name="submit" value="Send">
+              </fieldset>
+          </form>
+        </div>
+      </div>
+      <div>
+        <h2>About Us</h2>
+        <p><img src="images/simongarfunkel.jpg" alt="Simon & Garfunkel"></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fuga nostrum atque, possimus quae audio!</p>
+        <nav class="col-4f socialbutts">
+          <a href="https://gjg.github.io" title="Github Projects"><span class="icon-github"></span> </a>
+          <a href="#"><span class="icon-twitter" title=" Twitter"></span></a>
+          <a href="#"><span class="icon-facebook2" title="Facebook"></span></a>
+          <a href="#"><span class="icon-envelop" title="News"></span></a>
+        </nav>
+      </div>
+    </section>
+    <div class="auglysing2">
+      <div class="innihald2 col-2">
+        <div>
+              <h1 id="sprite1">Skráning stendur yfir!</h1>
+          <h1 id="sprite2">Forritunarkeppni framhaldsskólanna</h1>
+        </div>
+          <div>
+            <a href="http://www.ru.is/forritun/" target="_blank">
+              <button class="thoughtbot2">Skrá lið</button>
+            </a> 
+          </div>
+      </div><!-- innihald endar -->
+  </div><!-- auglýsing endar -->
+    <p class="centre"><a href=#top class="button">Top page</a></p>
+  </footer>
+  <audio id="myAudio"><!-- tónlist -->
+    <source src="audio/I-am-a-rock.mp3" type="audio/mpeg">
+  </audio>
+  <script>
+    var x = document.getElementById("myAudio"); 
+    
+    function playAudio() { 
+      x.play(); 
+    } 
+    
+    function pauseAudio() { 
+      x.pause(); 
+    } 
+    </script>
+</body>
+</html>
