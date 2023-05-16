@@ -1,5 +1,9 @@
 # ✨ Nemo-Demo.github.io ✨ 
 
-#### Hér er hægt að lýsa í stuttu máli um hvað VEFÞ1VG lokaverkefnið er 
+Hér sýnir Njáll Daníelsson verkefni sín sem eru unnin í vefáföngunum:
 
-Vefsíðan er um ...
+- VEFÞ1AVG, vefgrunnur
+- VEFÞ2VH, vefhönnun
+- VEFÞ2VF, vefforritun
+
+Nemodemo er eftirmyndarnemandi á tölvubraut tækniskólans.  
