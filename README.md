@@ -7,3 +7,4 @@ Hér sýnir Njáll Daníelsson verkefni sín sem eru unnin í vefáföngunum:
 - VEFÞ2VF, vefforritun
 
 Nemodemo er eftirmyndarnemandi á tölvubraut tækniskólans.  
+
